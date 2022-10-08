@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>HRITHIK'S WEATHERAPP</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__head">
+        <img
+          class="header__logo"
+          src="assets/dataimpact-logo.jpeg"
+          alt="data impact logo"
+        />
+        <span class="header__title">HRITHIK'S WEATHERAPP</span>
+      </div>
+      <div class="header__info">
+        <span class="header__info--date"></span>
+        <span class="header__info--time"></span>
+      </div>
+    </header>
+    <main class="main">
+      <form class="form">
+        <div class="form__labelInput">
+          <label class="form__label" htmlFor="city"></label>
+          <input
+            class="form__input"
+            id="city"
+            type="text"
+            placeholder="Enter city"
+          />
+        </div>
+        <button class="form__btn" type="submit">Search</button>
+      </form>
+
+      <h2 class="weatherForcast__location"></h2>
+      <div class="weatherForcast__today"></div>
+      <div class="weatherForcast__selectBox">
+        <select class="weatherForcast__select" name="time">
+          <option value="select">Select a time of day</option>
+          <option value="midnight">Midnight</option>
+          <option value="before dawn">Before dawn</option>
+          <option value="dawn">Dawn</option>
+          <option value="morning">Morning</option>
+          <option value="noon">Noon</option>
+          <option value="evening">Evening</option>
+          <option value="night">night</option>
+        </select>
+      </div>
+      <div class="weatherForcast"></div>
+      <p class="weatherForcast__poweredby">
+       
+      </p>
+      <div id="map"></div>
+    </main>
+    <footer class="footer">
+      <span class="footer__copyright">
+        &copy; 
+      </span>
+      <div class="footer__info">
+        <span class="footer__info--title"> Hrithik </span>
+        <img
+          class="footer__info--img"
+          src="/assets/dataimpact-logo.jpeg"
+          alt="data impact logo"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
